@@ -9,14 +9,14 @@
 
     <form th:action="@{/users/edit}" th:object="${user}" method="post">
         <input type="hidden" name="id" th:value="${user.getId()}">
-            <p>
-                <label th:for="name">Name</label>
-                <input type="text" name="name" th:id="name" th:value="${user.getName()}">
-            </p>
-            <p>
-                <label th:for="email">email</label>
-                <input type="text" name="email" th:id="email" th:value="${user.getEmail()}"><br/>
-            </p>
+        <p>
+            <label th:for="name">Name</label>
+            <input type="text" name="name" th:id="name" th:value="${user.getName()}">
+        </p>
+        <p>
+            <label th:for="email">email</label>
+            <input type="text" name="email" th:id="email" th:value="${user.getEmail()}"><br/>
+        </p>
         <button type="submit">Refresh Users</button>
     </form>
     <br/>

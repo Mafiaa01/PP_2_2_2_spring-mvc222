@@ -1,9 +1,7 @@
 package web.config;
 
-import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
@@ -25,7 +23,6 @@ import java.util.Properties;
 @PropertySource("classpath:db.properties")
 
 @EnableJpaRepositories("web")
-//@ComponentScan(value = "web")
 
 public class HibernateConfig {
     private static final String PROP_DATABASE_DRIVER = "db.driver";
